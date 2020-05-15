@@ -3,19 +3,22 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>ALPHA ATHLETE</title>
-
+	<title>Portfolio | Resume</title>
+	<!-- Style sheet for Font Awesome, where you get nice icons for your webs -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	
 <div class="bg">
+	
+	<img src="images/logo.jpg" alt="Portfolio Logo" height="250" width="275" class="img-fluid logo">
 
 	<div class="nav">
 		<a href="#" class="active">Home</a>
-		<a href="#">About Me</a>
-		<a href="#">Gallery</a>
-		<a href="#">Contact</a>
+		<a href="#">Resume</a>
+		<a href="https://www.instagram.com/lecookiee/">Social</a>
+		
 	</div>
 
 	<div class="home">
@@ -23,27 +26,24 @@
 	</div>
 	
 	<div class="aboutme">
-	<p><b>Hello,</b><br> My name is Huy. I've been in the fitness industry for more than 5 years now. My passion, love and desire to take your physique to the next level is my mission objective. The virtual coaching that I do focuses on physique enhancement, body fat reduction, muscle mass growth, gut health, nutritional health and just becoming a healthier individual! Along with being a trainer, I am also a Men's Physique competitor. Whatever the goal may be, I would love to assist you and develop the plan that will fit your goals and objectives. Let's get the training started!</p>
 
-		<h1>Knowledgeable Training Expertise</h1>
-		<p>With years of success and experience, I'm confident and capable of analyzing your body and creating a fitness plan that will help you reach your goals. Most plans include healthy eating protocols and exercise, to ensure the best results for the individual. I will work with you to keep you on track and motivated to reach your goals. It's time to become a ALPHA ATHLETE.</p>
+		<h1>Education</h1>
+		<p>Saint Paul College |							Saint Paul, MN</p>
+		<p>Major: Management Information Systems (AS) | 05/2020</p>	
 
-		<h1>Your Success is my mission</h1>
-		<p>I understand that adapting new fitness habits is difficult and often times fails. My objective is to change your view on fitness, so that it becomes apart of who you are and your lifestyle. As a Alpha Athlete, I strongly believe that if you practice healthy habits, you will be able to obtain a healthy lifestyle. Taking one day at a time and focusing on small behaviors that lead to incredible results.</p>
+		<h1>Work Experiene</h1>
+		<p>U.S. Bank |							White Bear Lake, MN</p>
+		<p>Personal Banker</p>
+
+		<h1>VOLUNTEER EXPERIENCE</h1>
+		<p>Feed my Straving Children |			Coon Rapids, MN</p>
+		<p>05/2020</p>
+
+		<h1>Skills</h1>
+		<p>Microsoft Outlook, Word, Excel, Powerpoint, and HTML</p>			
 
 	</div>
 
-	<div class="myimage">
-		<img src="images/1.jpg">
-		<img src="images/2.jpg">
-		<img src="images/3.jpg">
-		<img src="images/4.jpg">
-		<img src="images/5.jpg">
-		<img src="images/6.jpg">
-		<img src="images/7.jpg">
-		<img src="images/8.jpg">
-		<img src="images/9.jpg">
-	</div>
 
 	<div class="contactus">
 	<form method="post" action="">
@@ -54,6 +54,8 @@
 		</form>
 	</div>
 </div>
+	
+
 
 <script src="js/jquery-2.1.3.min.js"></script>
 <script type="text/javascript">
@@ -66,13 +68,6 @@ $(document).ready(function(){
 		$(mythis).addClass('active');
 	});
 
-	// ABOUT ME
-	$('a:nth-child(1)').click(function(){
-		$('.home').fadeIn('slow');
-	});
-	$('a:nth-child(2),a:nth-child(3),a:nth-child(4)').click(function(){
-		$('.home').fadeOut('fast')
-	});
 
 	// ABOUT ME
 	$('a:nth-child(2)').click(function(){
@@ -82,15 +77,13 @@ $(document).ready(function(){
 		$('.aboutme').fadeOut('fast')
 	});
 
-	// GALLERY
-	$('a:nth-child(3)').click(function(){
-		$('.myimage').fadeIn('slow')
+	$('a:nth-child(1)').click(function(){
+		$('.home').fadeIn('slow');
 	});
-	$('a:nth-child(1),a:nth-child(2),a:nth-child(4)').click(function(){
-		$('.myimage').fadeOut('fast')
+	$('a:nth-child(2),a:nth-child(3),a:nth-child(4)').click(function(){
+		$('.home').fadeOut('fast')
 	});
 
-	// GALLERY
 	$('a:nth-child(4)').click(function(){
 		$('.contactus').fadeIn('slow')
 	});
@@ -98,12 +91,6 @@ $(document).ready(function(){
 		$('.contactus').fadeOut('fast')
 	});
 
-
-	// var active = '.active';
-	// var $a = $('a').click(function(e) {
-	// 		$a.removeClass(active);
-	// 		$(this).addClass(active);
-	// 	});
 
 
 });
@@ -114,6 +101,8 @@ $(document).ready(function(){
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+
 
 
  </body>
