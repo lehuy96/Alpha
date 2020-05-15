@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Portfolio | Resume</title>
+	<!-- Style sheet for Font Awesome, where you get nice icons for your webs -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	
+<div class="bg">
+	
+	<img src="images/logo.jpg" alt="Portfolio Logo" height="250" width="275" class="img-fluid logo">
+
+	<div class="nav">
+		<a href="#" class="active">Home</a>
+		<a href="#">Resume</a>
+		<a href="https://www.instagram.com/lecookiee/">Social</a>
+		
+	</div>
+
+	<div class="home">
+		<h2>Never Back Down. Never Quit.</h2>
+	</div>
+	
+	<div class="aboutme">
+
+		<h1>Education</h1>
+		<p>Saint Paul College |							Saint Paul, MN</p>
+		<p>Major: Management Information Systems (AS) | 05/2020</p>	
+
+		<h1>Work Experiene</h1>
+		<p>U.S. Bank |							White Bear Lake, MN</p>
+		<p>Personal Banker</p>
+
+		<h1>VOLUNTEER EXPERIENCE</h1>
+		<p>Feed my Straving Children |			Coon Rapids, MN</p>
+		<p>05/2020</p>
+
+		<h1>Skills</h1>
+		<p>Microsoft Outlook, Word, Excel, Powerpoint, and HTML</p>			
+
+	</div>
+
+
+	<div class="contactus">
+	<form method="post" action="">
+		<input type="text" name="" placeholder="Name" required="" value="First Name">
+		<input type="text" name="" placeholder="Email" value="Your Email">
+		<textarea cols="8" rows="6" placeholder="Message">Your Message...</textarea>
+		<input type="submit" name="" value="Submit">
+		</form>
+	</div>
+</div>
+	
+
+
+<script src="js/jquery-2.1.3.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	
+
+	$('a').click(function(){
+		var mythis = $(this);
+		$('a').removeClass('active');
+		$(mythis).addClass('active');
+	});
+
+
+	// ABOUT ME
+	$('a:nth-child(2)').click(function(){
+		$('.aboutme').fadeIn('slow');
+	});
+	$('a:nth-child(1),a:nth-child(3),a:nth-child(4)').click(function(){
+		$('.aboutme').fadeOut('fast')
+	});
+
+	$('a:nth-child(1)').click(function(){
+		$('.home').fadeIn('slow');
+	});
+	$('a:nth-child(2),a:nth-child(3),a:nth-child(4)').click(function(){
+		$('.home').fadeOut('fast')
+	});
+
+	$('a:nth-child(4)').click(function(){
+		$('.contactus').fadeIn('slow')
+	});
+	$('a:nth-child(3),a:nth-child(2),a:nth-child(1)').click(function(){
+		$('.contactus').fadeOut('fast')
+	});
+
+
+
+});
+</script>
+
+
+<!--jQuery, Popper, and Bootstrap Javascript files-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+
+
+
+ </body>
+</html>
